@@ -1,0 +1,152 @@
+/* HeroSection.css */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-content span {
+  color: #1b1918;
+}
+
+.hero-content p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.review-section {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  margin-right: 10px;
+  font-size: 4rem;
+}
+
+.stars {
+  display: inline-block;
+}
+
+.stars span {
+  color: #f8ce0b;
+}
+
+.empty {
+  color: #ccc;
+}
+
+.num-reviews {
+  margin-left: 5px;
+  font-size: 1.8rem;
+}
+
+.order-now-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+  background-color: #e63c00;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.hero-image img {
+  width: 700px;
+  height: 650px;
+}
+
+.thumb {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.thumb img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.thumb img.active {
+  transform: scale(1.3);
+}
+
+@media(max-width:900px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-image img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .thumb {
+    display: flex;
+  }
+
+  .thumb img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .num-reviews {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .star-rating {
+    font-size: 1.4rem;
+  }
+
+  .order-now-button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+}

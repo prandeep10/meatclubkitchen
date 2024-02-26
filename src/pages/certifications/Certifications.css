@@ -1,0 +1,32 @@
+/* Certifications.css */
+.certifications {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .certifications-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .certification-item {
+    margin: 20px;
+  }
+  
+  .certification-item img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .certification-name {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
