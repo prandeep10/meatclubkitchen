@@ -4,9 +4,10 @@ import './FeaturedSection.css';
 
 const FeaturedSection = () => {
   const featuredItems = [
-    { image: 'image1.png', title: 'Lachit Roll', description: 'Lachit Roll' },
-    { image: 'image3.png', title: 'Python Roll', description: 'Python Roll' },
-    { image: 'image4.jpg', title: 'Pork Thali', description: 'Pork Thali' }
+    { image: 'image2.png', title: 'Lachit Roll', description: 'Lachit Roll' },
+    { image: 'image1.png', title: 'Pork Laai Xaak', description: 'Pork with Laai Xaak' },
+    { image: 'image4.png', title: 'Chicken Ethinic', description: 'Chicken ethinic masala' },
+    { image: 'image3.png', title: 'Chicken Fried Rice', description: 'Chicken FriedRice' }
   ];
 
   return (
@@ -20,7 +21,7 @@ const FeaturedSection = () => {
               <div className="item-content">
                 <h3 className="item-title">{item.title}</h3>
                 <p className="item-description">{item.description}</p>
-                <button className="item-button">Order Now</button>
+                <a href='https://www.zomato.com/guwahati/meat-club-kitchen-maligaon' target='_black' rel="noopener noreferrer"><button className="item-button">Order Now</button></a>
               </div>
             </div>
           ))}

@@ -1,56 +1,70 @@
-/* Menu.css */
-
-.menu {
-  padding: 2rem;
+.menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-align: center;
+.menu-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+  margin-top: 20px;
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 16px;
+  color: #444;
+  transition: background-color 0.3s;
+}
+
+.tabs button.active {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 .menu-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
 
-.menu-item:hover {
-  transform: translateY(-5px);
+.menu-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
 }
 
-.menu-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.item-details {
-  padding: 1.5rem;
-}
-
-.item-details h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.item-details p {
-  font-size: 1.4rem;
-  line-height: 1.6;
+.menu-item p {
+  margin: 0;
+  color: #666;
 }
 
 .price {
+  margin-top: 10px;
   font-weight: bold;
-  color: #ff5722;
-  margin-top: 1rem;
+  font-size: 18px;
+  color: #222;
+}
+
+@media(max-width:900px){
+    .menu-container{
+      width: 95%;
+    }
 }

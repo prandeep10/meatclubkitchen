@@ -1,0 +1,71 @@
+/* More.css */
+
+.more-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .more-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .social-media,
+  .fan-club,
+  .catering-services {
+    margin-bottom: 40px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .instagram {
+    color: #bc2a8d;
+  }
+  
+  .facebook {
+    color: #3b5998;
+  }
+  
+  .twitter {
+    color: #1da1f2;
+  }
+  
+  .subscribe-form,
+  .contact-form {
+    margin-top: 20px;
+  }
+  
+  input[type='email'],
+  input[type='text'],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4aad4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #368c36;
+  }
+  

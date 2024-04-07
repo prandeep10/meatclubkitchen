@@ -8,25 +8,22 @@ const About = () => {
       <div className="about-content">
         <div className="about-text">
           <h2>About Us</h2>
-          <p>Welcome to MeatClubKitchen, where we bring together the flavors of the world to create an unforgettable dining experience.</p>
-          
-          <div className="about-image">
-          <img src='logo_rough.jpg' alt="About Us" />
-        </div>
 
-          <h3>Our Story</h3>
-          <p>Founded in 2010, MeatClubKitchen started as a small family-owned restaurant in the heart of the city. Over the years, we have grown into a beloved establishment, known for our commitment to quality and hospitality.</p>
+          <div className="about-image">
+            <img src='meat-club-logo.png' alt="About Us" />
+          </div>
+
+          <p>The sole ultimatum of Team Meat club is to urbanize to ethnic delicacies of the North East India and present it to the people. We are here to revolutionize the idea of fast food and give all the food enthusiasts an experience of taste that feels like home. While creating the menu, we made sure that, north East's diverse range of cuisines leave a trace of exceptional nostalgia and sizzling flavours among our customers. Our exquisite traditional Assamese dishes highlights modern north east inspired cuisine delivered with utter homely love.</p>
+
+          <h3>One of our major characteristic:</h3>
+          <p>Meat Club is an urban ethnic cloud kitchen which promises the journey of your favourite food experience from our kitchen
+            to your doorstep to be a hassle free love ride</p>
+
+          <p>
+            George Bernard Shaw once said that "There is no sincere love than the love of food", and to carry out this legacy of food, love and service is our major concern. There's no greater pleasure then enjoying the favour of your favourite cuisine and deliver the new people, who're in town to experience something so divinely creative.
+          </p>
+          <br/>
           
-          <h3>Our Cuisine</h3>
-          <p>At MeatClubKitchen, we specialize in a variety of cuisines, from traditional comfort foods to innovative fusion dishes. Our menu is carefully curated to satisfy every palate, with options ranging from juicy steaks to fresh seafood and vegetarian delights.</p>
-          
-          <h3>Our Philosophy</h3>
-          <p>At the core of our philosophy is a dedication to sourcing the finest ingredients and preparing them with skill and care. We believe in creating dishes that not only tantalize the taste buds but also nourish the body and soul.</p>
-          
-          <h3>Visit Us</h3>
-          <p>We invite you to dine with us and experience the warmth and hospitality that MeatClubKitchen is known for. Whether you're celebrating a special occasion or simply craving a delicious meal, we look forward to welcoming you.</p>
-          
-          <p>For reservations or inquiries, please contact us at <a href="tel:+123456789">+1 (234) 567-89</a> or email us at <a href="mailto:info@meatclubkitchen.com">info@meatclubkitchen.com</a>.</p>
         </div>
 
       </div>

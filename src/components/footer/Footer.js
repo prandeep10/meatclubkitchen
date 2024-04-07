@@ -8,13 +8,14 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h3>About Us</h3>
+          <img src='meat-club-logo.png' alt='logo'/>
           <p>Northeast's First Urban Ethinic Cloud Kitchen</p>
         </div>
         <div className="footer-section">
           <h3>Contact Us</h3>
           <p>AEC Road, Jalukbari, Guwahati-13</p>
-          <p>(123) 456-7890</p>
-          <p>info@example.com</p>
+          <p>+91-8822944041</p>
+          <p>meatclubkitchen.official@gmail.com</p>
         </div>
       </div>
       <div className="footer-bottom">

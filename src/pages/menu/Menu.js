@@ -1,30 +1,62 @@
-// Menu.js
-import React from 'react';
-import './Menu.css';
+import React, { useState, useEffect } from 'react';
+import { readRemoteFile } from 'react-papaparse';
+import './Menu.css'; // Make sure you have the CSS file in the correct path
 
 const Menu = () => {
-  const menuItems = [
-    { name: 'Lachit Roll', image: 'image1.png', description: 'Delicious pizza topped with cheese, pepperoni, and fresh vegetables.', price: '$10.99' },
-    { name: 'Python Roll', image: 'image4.jpg', description: 'Juicy beef patty served with lettuce, tomato, onion, and your choice of cheese.', price: '$8.99' },
-    { name: 'Assamese Thali', image: 'image3.png', description: 'Assorted sushi rolls made with fresh seafood and sticky rice.', price: '$12.99' },
-    // Add more menu items as needed
-  ];
+  const [activeTab, setActiveTab] = useState('menu1');
+  const [menu1Items, setMenu1Items] = useState([]);
+  const [menu2Items, setMenu2Items] = useState([]);
+
+  useEffect(() => {
+    // Fetch and parse menu1.csv
+    readRemoteFile('/menu1.csv', {
+      header: true,
+      complete: (results) => {
+        setMenu1Items(results.data);
+      },
+    });
+
+    // Fetch and parse menu2.csv
+    readRemoteFile('/menu2.csv', {
+      header: true,
+      complete: (results) => {
+        setMenu2Items(results.data);
+      },
+    });
+  }, []);
 
   return (
-    <div className="menu">
-      <h2>Menu</h2>
-      <div className="menu-items">
-        {menuItems.map((item, index) => (
-          <div key={index} className="menu-item">
-            <img src={`images/${item.image}`} alt={item.name} />
-            <div className="item-details">
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
-              <p className="price">{item.price}</p>
-            </div>
-          </div>
-        ))}
+    <div className='menu-section'>
+      <div className="menu-container">
+      <div className="tabs">
+        <button className={activeTab === 'menu1' ? 'active' : ''} onClick={() => setActiveTab('menu1')}>Part 1</button>
+        <button className={activeTab === 'menu2' ? 'active' : ''} onClick={() => setActiveTab('menu2')}>Part 2</button>
       </div>
+      <div className="content">
+        {activeTab === 'menu1' && (
+          <div className="menu">
+            {menu1Items.map((item, index) => (
+              <div key={index} className="menu-item">
+                <h3>{item.Item}</h3>
+                <p>{item.Variant}</p>
+                <div className="price">{item.Price}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {activeTab === 'menu2' && (
+          <div className="menu">
+            {menu2Items.map((item, index) => (
+              <div key={index} className="menu-item">
+                <h3>{item.Item}</h3>
+                <p>{item.Description}</p>
+                <div className="price">{item.Price1} / {item.Price2}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
     </div>
   );
 };
